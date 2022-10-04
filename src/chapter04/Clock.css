@@ -1,0 +1,27 @@
+#clockframe {
+    border: 2px dotted yellow;  
+    /* 시계 테두리의 표시 (굵기,점선,노랑)*/
+    box-sizing: content-box;
+    /* 테두리 크기는 내용에 맞도록 설정 */
+    width: 40%;
+    /* 테두리 크기를 브라우져 폭의 40%로 설정 */
+    padding: 10px;
+}
+
+.time{
+    font-size: 1.8rem;
+    /* 시간출력 글씨 크기 */
+    font-weight: bold;
+    /* 시간출력 글씨 굵게 */
+    color:rgb(0,154,250);
+    /* 시간표기 색상 */
+}
+
+.date{
+    font-size: 1.1rem;
+    /* 날짜 출력 글씨 크기 */
+    color: rgb(50,0,250);
+    /* 날짜 출력 색상 */
+    padding-top: 0.3cm;
+    /* 시간과 날짜의 표시간격 설정 */
+}

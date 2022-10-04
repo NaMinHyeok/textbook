@@ -1,0 +1,48 @@
+.wrapper{
+    /* 화면 전체를 감싸줄 스타일을 정해준다 */
+    display:grid;
+    /* grid형식으로 지정해 무비스토리 헤더부분과 컨텐츠들 부분을 아래로 쌓이게한다 */
+    margin-bottom: 8vh;
+}
+.header{
+    /* 무비스토리 라는 부분이 출려고되게 하는부분 */
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: purple;
+    color:white;
+    padding:0.8rem;
+    padding-left: 1.5rem;
+}
+.content_wrapper{
+    min-width: 18rem;
+    /* 전체 컨텐츠의 크기의 최소값을 정해준다. */
+    display: flex;
+    /* flex를 통해 옆으로 쌓일수있게 한다. */
+}
+.text_area{
+    /* title genre year 등 영화의 내용이 들어갈 부분 */
+    margin: 0;
+    padding: 2rem;
+}
+.title_image{
+    /* 영화의 이미지의 크기를 정해준다 */
+    width: 30vw;
+    height: 80vh;
+    /* 브라우저크기에 맞게 설정 */
+}
+.movie_genre{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+}
+.movie_title{
+    font-size: 2.5rem;
+    color: orange;
+}
+.movie_year{
+    font-size: 1.5rem;
+    margin: 1rem;
+}
+.movie_description{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
