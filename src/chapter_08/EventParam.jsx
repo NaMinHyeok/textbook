@@ -1,6 +1,6 @@
 import React from "react";
 function EventParam(){
-    const onClickHandler = (event) = alert(event.target.value);
+    const onClickHandler = (event) => alert(event.target.value);
 
     return (
         <button
