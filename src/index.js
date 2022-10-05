@@ -1,12 +1,12 @@
 import React from "react"
 import  ReactDOM  from "react-dom/client"
 import './index.css'
-import Toggle from "./chapter_08/Toggle";
+import MyLotto from "./chapter_08/MyLotto";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <>
-        <Toggle />
+        <MyLotto />
     </>
 );
