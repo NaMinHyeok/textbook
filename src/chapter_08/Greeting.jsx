@@ -1,5 +1,5 @@
 import React from "react";
-import UserGreeting from "./UserGreeting";
+import UserGreeting from "./UserGreeting.jsx";
 import GuestGreeting from "./GuestGreeting";
 
 function Greeting(props){
