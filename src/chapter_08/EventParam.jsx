@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect } from "react";
 function EventParam(){
     const onClickHandler = (event) => alert(event.target.value);
 
