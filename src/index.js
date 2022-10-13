@@ -1,12 +1,12 @@
 import React from "react"
 import  ReactDOM  from "react-dom/client"
 import './index.css'
-import ToDoList from "./chapter_09/ToDoList";
+import ToDoList_delete from "./chapter_09/ToDoList_delete";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <div>
-        <ToDoList/>
+        <ToDoList_delete/>
     </div>
 );
