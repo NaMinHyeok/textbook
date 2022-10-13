@@ -1,12 +1,14 @@
 import React from "react"
 import  ReactDOM  from "react-dom/client"
 import './index.css'
-import ToDoList_delete from "./chapter_09/ToDoList_delete";
+import Reservation from "./chapter_10/Reservation";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <div>
-        <ToDoList_delete/>
-    </div>
+    <React.StrictMode>
+        <div>
+            <Reservation/>
+        </div>
+    </React.StrictMode>
 );
