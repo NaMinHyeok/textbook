@@ -6,6 +6,9 @@ const MAX_CAPACITY = 10;    // 정원 10명
 function Accommodate(props){
     const [isFull, setIsFull] = useState(false);
     const [count, increaseCount, decreaseCount] = useCounter(0);
+    //useEffect(effect함수) 컴포넌트가 렌더링 될 때마다 이펙트함수가 호출
+    //useEffect((effect함수),[])    컴포넌트가 mount unmount 될때 한번씩만 이펙트함수 호출
+    //useEffect((effect함수),[의존성 배열]) 의존성 배열의 값이 변경 될 때마다 이펙트함수 호출
 
     useEffect(()=>{console.log(`=== 1.useEffect(f):(정원초과?${isFull})`)});
     useEffect( ( ) => {console.log("=== 2. useEffect(f,[ ])  mount 호출됨");   

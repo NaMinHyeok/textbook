@@ -17,7 +17,7 @@ const comments = [
         comment:"이번주에는 props를 배웠어요",
     },
 ];
-
+// map 으로 반복문 comment의 data들을 보내온다.
 function CommentList(){
     return (
         <div>
