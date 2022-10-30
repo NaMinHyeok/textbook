@@ -1,12 +1,36 @@
+* {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.navbar {
+    margin:0px;
+    padding: 20px;
+}
+.navbar-red {
+    background-color: red;
+}
+.navbar-green {
+    background-color: green;
+}
+.navbar-yellow {
+    background-color: yellow;
+}
+.navbar-blue {
+    background-color: blue;
+}
 .FancyBorder {
-    padding: 10px 10px;
     border: 10px solid;
 }
 
 .FancyBorder-blue {
     border-color: blue;
 }
-
+.FancyBorder-red {
+    border-color: red;
+}
+.FancyBorder-black {
+    border-color: black;
+}
 .Dialog-title {
     margin: 0;
     font-family: sans-serif;
