@@ -5,7 +5,7 @@ const serverURL = "http://localhost:65020/users";
 
 function App(){
     const[userData,setUserData] = useState(null);
-    const[validation,setValidation] = useState(true);
+    const[validation,setValidation] = useState(null);
 
     const getUserData = () => {
         fetch(serverURL)                    //fetch함수를 이용해 REST API로 회원목록을 요청
@@ -58,11 +58,13 @@ function App(){
             </div>
             <div>
                 <h2>회원확인</h2>
+
+
                 <form onSubmit={onSubmitHandler_Check}>
                     <input type="text" name="id" placeholder="아이디" />
                     <input type="text" name="passwd" placeholder="비밀번호" />
                     <button type="submit">확인</button>
-                    {validation ? (<p>회원으로 확인되었습니다.</p>):(<p>그런회원은없습니다.</p>)}
+                    {validation===null ?<p></p> :( validation ?(<p>회원으로 확인되었습니다.</p>):(<p>그런회원은없습니다.</p>))}
                 </form>
             </div>
 
