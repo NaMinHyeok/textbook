@@ -1,11 +1,10 @@
 import React,{useState,useEffect} from "react";
 import './App.css';
 
-const serverURL = "http://localhost:65020/users";
+const serverURL = "http://localhost:65010/users";
 
 function App(){
     const[userData,setUserData] = useState(null);
-    const[validation,setValidation] = useState(true);
 
     const getUserData = () => {
         fetch(serverURL)                    //fetch함수를 이용해 REST API로 회원목록을 요청
@@ -32,19 +31,6 @@ function App(){
         })
         .then(getUserData())
     }
-    const onSubmitHandler_Check = (event) => {
-        event.preventDefault();
-        const id = event.target.id.value;
-        const passwd = event.target.passwd.value;
-        const result = userData.filter((data)=>(data.id===id && data.passwd === passwd));
-        console.log(result);
-        if(result.length != 1){
-            setValidation(false)
-        }
-        else{
-            setValidation(true);
-        }
-    }
     return ( 
         < >
             <div>
@@ -58,14 +44,12 @@ function App(){
             </div>
             <div>
                 <h2>회원확인</h2>
-                <form onSubmit={onSubmitHandler_Check}>
-                    <input type="text" name="id" placeholder="아이디" />
-                    <input type="text" name="passwd" placeholder="비밀번호" />
+                <from onSubmit={onSubmitHandler}>
+                    <input type="text" name="id" placeholder="아이디"/>
+                    <input tpye="text" name="passwd" placeholder="암호"/>
                     <button type="submit">확인</button>
-                    {validation ? (<p>회원으로 확인되었습니다.</p>):(<p>그런회원은없습니다.</p>)}
-                </form>
+                </from>
             </div>
-
             <p> </p> 
             <div>
                 <h2> 회원목록 </h2>
